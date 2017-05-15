@@ -1,0 +1,85 @@
+<DOCTYPE.html>
+ <html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+ <title>Golden Arrow Bus Service</title> 
+  <script src="main_Js/handlebars-v4.0.5.js"></script>
+  <link rel="stylesheet" type="text/css" href="main_Css/goldenArrowBuss.css">
+
+    
+<script class="table" type="text/x-handlebars-template">
+ <table border="1" align="center">
+<thead><kbd>Your query shows the result below</kbd> </thead>
+    <tbody> 
+        {{#each travelTime}}
+            <td>{{day}}</td>
+            <td>{{time}}</td>
+            <td>{{result}}</td>
+         {{/each}}
+        </tbody>
+      </table>
+</script>
+    
+ <script class="dayAndTimeSelectField" type="text/x-handlebars-template">
+    <select class="day">
+    <option value="">Select the day..</option>
+    {{#each day}}
+       <option>{{day}}</option>
+    {{/each}}
+      </select>
+
+      <select class="time">
+         <option value="">Select the time..</option>
+         {{#each time}}
+       <option>{{time}}</option>
+        {{/each}}
+    </select>
+</script>
+    
+</head>    
+  <body>
+ 
+    <div class="containt">   
+     <div class="dDown">
+        <h3><kbd>Search Travel day and time here.</kbd></h3>
+        <div class="selectField"></div>
+        <button class="searchButton">Search</button>
+     </div> 
+ <div class="showTable"></div>
+    
+ <div class="footer">
+    <kbd><strong>Note:</strong> This site has been done through <a href="http://www.projectcodex.co/learn/"> codeX </a>curruculum</kbd>
+    <p>Contact information: <a href="mailto:christian@codexproject.co">christian@projectcode.co</a>.</p>
+     <p><b><b>ChristianNgubanacopyright@2017</b></p>
+  </div>
+</div>    
+<script src="main_Js/busTransport.js"></script>      
+</body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </html>    
