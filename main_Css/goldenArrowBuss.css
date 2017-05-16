@@ -9,13 +9,44 @@
     background-color: olive;
     position: absolute;
     top: -20%;
-    right: 18%
+    right: 13%
 
+}
+table {
+    border-collapse: collapse;
+    width: 20%;
+    height: 20%;
+    border: 1px solid black;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: grey
+}
+
+tr td:{
+    color: darkblue;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center
+}
+
+
+
+h2{
+    margin: 34px;
+    padding: 55px;
+    text-align: center;
+    color: navy;
 }
 .showTable{
     background: #eee;
     text-align: center;
-    margin: 300px;
+    margin: 100px;
 } 
 
 select {

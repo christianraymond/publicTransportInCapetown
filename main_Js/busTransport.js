@@ -162,7 +162,11 @@ var searchButton = document.querySelector('.searchButton')
 searchButton.addEventListener('click', function showDropdown() {
   var dayFilter = document.querySelector(".day");
   var timeFilter = document.querySelector(".time");
-  
+    
+if(dayFilter.value == "" &&
+   timeFilter.value == ""){
+    alert("First enter a proper values")
+}
     var result = {};
 
   function searchDay(input) {
