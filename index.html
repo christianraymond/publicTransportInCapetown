@@ -13,13 +13,13 @@
     
 <script class="table" type="text/x-handlebars-template">
  <table border="1" align="center">
-<thead><kbd>Your query shows the result below</kbd> </thead>
+<thead><kbd>Your query shows the result below:</kbd></thead><br>
     <tbody> 
-        {{#each travelTime}}
-            <td>{{day}}</td>
-            <td>{{time}}</td>
+        {{#each travelTime}}<br>
+            <tr>{{day}}</tr><br>
+            <tr>{{time}}</tr>
          <td>
-        <p>
+        <p><br>
         <font color="blue">{{result}}</font>
        </p> 
         </td>    
@@ -46,22 +46,22 @@
     
 </head>    
   <body>
-<h2><kbd>Golden Arrow Buss Service/Bayview To Cape Town</kbd></h2>
-    <img src="bussImages.jpg">  
-    <div class="containt">   
+    <div class="content">
+<p><b><a href="https://www.gabs.co.za/">Golden Arrow Buss Service/Bayview To Cape Town, The ultimate
+    and easier way to find your specific search of your choice.</a> Or click <a href="http://196.41.132.126/pdfs/STRANDFONTEIN___CAPE_TOWN_valid_from_20170501_to_20170501_008001.pdf">Here</a> to see the Pdf form     </b></p>   
+   
      <div class="dDown">
-        <h3><kbd>Search Travel day and time here.</kbd></h3>
+        <h5><kbd>Search Travel day and time here.</kbd></h5>
         <div class="selectField"></div>
         <button class="searchButton">Search</button>
      </div> 
  <div class="showTable"></div>
-    
+</div>  
  <div class="footer">
     <kbd><strong>Note:</strong> This site has been done through <a href="http://www.projectcodex.co/learn/"> codeX </a>curruculum</kbd>
     <p>Contact information: <a href="mailto:christian@codexproject.co">christian@projectcode.co</a>.</p>
      <p><b><b>ChristianNgubanacopyright@2017</b></p>
-  </div>
-</div>    
+  </div>   
 <script src="main_Js/busTransport.js"></script>      
 </body>
     

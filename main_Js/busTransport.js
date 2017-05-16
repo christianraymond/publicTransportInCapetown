@@ -16,7 +16,7 @@ var travelTime = [{
    
     
     { 
-    day: "Monday to Friday",
+    day: "Monday To Friday",
     time: "05h05h15am to 05h15am",
     result: "05h15  BAYVIEW  05h25  SAN REMO Via STRANDFONTEIN VILLVia NEW OTTERY RD Via CHUKKER RD 06h25 CAPE TOWN"                          },
     
@@ -91,9 +91,6 @@ result:"07h00 BAYVIEW 07h05 SAN REMO Via  STRANDFONTEIN VILL Via NEW OTTERY RD V
                                                 
 ];
 
-
-
-
 function uniquedayInfo() {
   'use strict';
 
@@ -160,12 +157,12 @@ function showDropdown() {
 var searchButton = document.querySelector('.searchButton')
 
 searchButton.addEventListener('click', function showDropdown() {
-  var dayFilter = document.querySelector(".day");
-  var timeFilter = document.querySelector(".time");
+ var dayFilter = document.querySelector(".day");
+ var timeFilter = document.querySelector(".time");
     
-if(dayFilter.value == "" &&
-   timeFilter.value == ""){
+if(dayFilter.value == ""){
     alert("First enter a proper values")
+    return;
 }
     var result = {};
 
@@ -179,12 +176,17 @@ if(dayFilter.value == "" &&
 
   if (dayFilter.value !== ""){
      result = travelTime.filter(searchDay);
-  }
-
+    } 
+    
 if(timeFilter.value !== ""){
   result = travelTime.filter(searchTime);
-  }
-
+  } 
+    else{
+        dayFilter.value == "" &&
+        timeFilter.value == "" 
+        alert("You have to fill all the fields")
+        return;
+    }
   var tableDisplay = showTable({
     result
   });
